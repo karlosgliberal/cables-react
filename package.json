@@ -1,6 +1,6 @@
 {
   "name": "cables-react",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "A React library for integrating Cables.gl patches with hooks",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
@@ -16,13 +16,13 @@
   "keywords": ["react", "cables.gl", "webgl", "graphics", "hooks"],
   "author": "karlosgliberal",
   "license": "MIT",
-  "dependencies": {},
-  "devDependencies": {
-    "typescript": "^5.x",
-    "react": "^18.x",
-    "@types/react": "^18.x"
-  },
   "peerDependencies": {
-    "react": "^18.x"
+    "react": "^18.x",
+    "typescript": "^4.x || ^5.x"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0",
+    "@types/react": "^18.0.30",
+    "react": "^18.2.0"
   }
 }

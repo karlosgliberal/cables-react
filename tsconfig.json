@@ -10,5 +10,6 @@
     "moduleResolution": "node",
     "strict": true
   },
-  "include": ["src/**/*"]
+  "include": ["src/**/*"], // Esta es la forma correcta
+  "exclude": ["node_modules", "dist"]
 }
