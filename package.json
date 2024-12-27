@@ -1,23 +1,31 @@
 {
     "name": "cables-react",
-    "version": "0.0.7",
-    "description": "Generic React component to integrate cables.gl with access to functions, callbacks and variables",
-    "main": "dist/index.js",
-    "types": "dist/index.d.ts",
-    "scripts": {
-        "build": "tsc",
-        "clean": "rm -rf dist",
-        "test": "echo 'No tests yet'",
-        "prepublishOnly": "npm run build"
+    "version": "0.0.8",
+    "author": {
+        "name": "karlosgliberal",
+        "email": "karlosgliberal@gmail.com",
+        "url": "https://cables.gl"
     },
+    "description": "Generic React component to integrate cables.gl with access to functions, callbacks, and variables",
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",   
+    "scripts": {
+      "build": "tsc",
+      "clean": "rm -rf dist",
+      "test": "echo 'No tests yet'",
+      "prepublishOnly": "npm run build"
+    },
+    "files": [
+      "dist"
+    ],
     "devDependencies": {
-        "@types/react": "^18.3.18",
-        "@types/react-dom": "^18.3.5",
-        "typescript": "^4.9.5"
+      "@types/react": "^18.3.18",
+      "@types/react-dom": "^18.3.5",
+      "typescript": "^4.9.5"
     },
     "peerDependencies": {
-        "react": ">=18.0.0",
-        "react-dom": ">=18.0.0"
+      "react": "^18.0.0",  
+      "react-dom": "^18.0.0"
     },
     "license": "MIT"
-}
+  }
