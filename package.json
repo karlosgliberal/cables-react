@@ -1,6 +1,6 @@
 {
     "name": "cables-react",
-    "version": "0.0.4",
+    "version": "0.0.7",
     "description": "Generic React component to integrate cables.gl with access to functions, callbacks and variables",
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
@@ -16,8 +16,8 @@
         "typescript": "^4.9.5"
     },
     "peerDependencies": {
-        "react": "^18.3.1",
-        "react-dom": "^18.3.1"
+        "react": ">=18.0.0",
+        "react-dom": ">=18.0.0"
     },
     "license": "MIT"
 }

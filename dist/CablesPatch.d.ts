@@ -14,12 +14,7 @@ export interface CablesPatchProps {
     patchDir?: string;
     width?: string;
     height?: string;
-    selector?: string;
     className?: string;
-    /**
-     * key => callbackName en patch.config
-     * val => function(data: any): void
-     */
     configCallbacks?: Record<string, (data: any) => void>;
 }
 declare const CablesPatch: React.ForwardRefExoticComponent<CablesPatchProps & React.RefAttributes<CablesPatchRef>>;

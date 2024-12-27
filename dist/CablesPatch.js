@@ -1,7 +1,7 @@
-"use client"; // <-- si quieres asegurar modo cliente
+"use client";
 import React, { forwardRef, useRef, useImperativeHandle, useEffect, useState } from "react";
 const CablesPatch = forwardRef((props, ref) => {
-    const { patchDir = "/patch/", width = "100%", height = "100%", selector, className, configCallbacks, } = props;
+    const { patchDir = "/patch/", width = "100%", height = "100%", className, configCallbacks, } = props;
     const [cablesInitialized, setCablesInitialized] = useState(false);
     const patchInstanceRef = useRef(null);
     useEffect(() => {
@@ -27,11 +27,6 @@ const CablesPatch = forwardRef((props, ref) => {
             }
         };
     }, [patchDir]);
-    useEffect(() => {
-        if (selector && cablesInitialized) {
-            callPatchFunction("patchFunctionSelectorEmociones", selector);
-        }
-    }, [selector, cablesInitialized]);
     function initPatch() {
         const opts = {
             patch: window.CABLES?.exportedPatch,
@@ -40,7 +35,7 @@ const CablesPatch = forwardRef((props, ref) => {
         };
         const patch = new window.CABLES.Patch(opts);
         patchInstanceRef.current = patch;
-        // Asignar callbacks
+        // Asignar callbacks (si existen)
         if (patch.config && configCallbacks) {
             for (const [callbackName, fn] of Object.entries(configCallbacks)) {
                 patch.config[callbackName] = fn;
