@@ -40,9 +40,7 @@ yarn.lock
 package-lock.json
 pnpm-lock.yaml
 
-# TypeScript
-*.d.ts.map
-*.d.ts
+
 
 # En caso de monorepo:
 lerna-debug.log

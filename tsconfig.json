@@ -1,15 +1,15 @@
 {
-    "compilerOptions": {
-      "target": "ES2020",
-      "module": "ESNext",
-      "moduleResolution": "Node",
-      "jsx": "react",
-      "strict": true,
-      "esModuleInterop": true,
-      "skipLibCheck": true,
-      "declaration": true,
-      "declarationDir": "dist",
-      "outDir": "dist"
-    },
-    "include": ["src"]
-  }
+  "compilerOptions": {
+    "target": "ES2020",
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "jsx": "react",            // o "react-jsx" si prefieres
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "declaration": true,       
+    "declarationDir": "dist",  
+    "outDir": "dist"           
+  },
+  "include": ["src"]
+}
